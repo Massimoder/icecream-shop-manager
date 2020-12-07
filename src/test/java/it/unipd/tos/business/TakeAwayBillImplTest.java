@@ -46,7 +46,7 @@ public class TakeAwayBillImplTest {
     @Test(expected=TakeAwayBillException.class)
     public void calcoloDelTotaleConListaOrdiniNullaTest() {
 
-	itemsOrdered = null;
+ itemsOrdered = null;
         testBill.getOrderPrice(itemsOrdered, user);
     }
     @Test
