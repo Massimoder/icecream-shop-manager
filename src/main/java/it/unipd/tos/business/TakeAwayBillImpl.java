@@ -26,8 +26,7 @@ public class TakeAwayBillImpl implements TakeAwayBill {
             throw new TakeAwayBillException("Lista ordini vuota");
         }
 
-        for (MenuItem item : itemsOrdered) {
-        	 double current = item.getPrice();
+        for (MenuItem item : itemsOrdered) {double current = item.getPrice();
              if(item.getType().equals(ItemType.Gelato)) {
                  gelati++;
              }
